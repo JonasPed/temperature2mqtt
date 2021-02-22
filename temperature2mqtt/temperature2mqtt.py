@@ -2,8 +2,8 @@ import json
 import paho.mqtt.client as mqtt
 import time
 import argparse
-import temperatureReader
-from temperatureReader import TemperatureProxy
+import temperature2mqtt.temperatureReader
+from temperature2mqtt.gtemperatureReader import TemperatureProxy
 
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
